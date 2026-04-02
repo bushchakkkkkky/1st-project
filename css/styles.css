@@ -267,6 +267,20 @@ ul {
   margin-bottom: 16px;
 }
 
+.chefs-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
 /* Formats Section */
 
 .formats-list {
@@ -306,13 +320,94 @@ ul {
   font-weight: 300;
 }
 
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+/* Carousel Button */
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  padding: 0;
+  cursor: pointer;
+  fill: var(--color-primary-dark);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-brand-light);
+}
+
 /* Contact Section */
+
+.contacts-section {
+  padding-bottom: 96px;
+}
 
 .contacts-title {
   margin-bottom: 16px;
 }
 
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
+
 /* Footer */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.address-socials {
+  display: flex;
+  gap: 22px;
+}
+
+.socials-icons {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-primary-light);
+}
+
+.socials-icons :hover {
+  fill: var(--color-brand-normal);
+}
 
 .address-link {
   text-decoration: none;
