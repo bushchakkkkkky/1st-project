@@ -25,7 +25,9 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="order-button" type="button">Замовити дзвінок</button>
+          <button class="order-button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -91,15 +93,17 @@
                 />
                 <div>
                   <h3 class="chef-name">Настя</h3>
-                  <p class="chef-text">Привіт, я Настя!</p>
-                  <p class="chef-text">
-                    Вже 10 років, я втілюю <br />
-                    у життя цікаві та смачні ідеї.
-                  </p>
-                  <p class="chef-text">
-                    Я випічу для вас <br />
-                    найсмачніші вироби!
-                  </p>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я втілюю <br />
+                      у життя цікаві та смачні ідеї.
+                    </p>
+                    <p>
+                      Я випічу для вас <br />
+                      найсмачніші вироби!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -112,17 +116,19 @@
                 />
                 <div>
                   <h3 class="chef-name">Влад</h3>
-                  <p class="chef-text">Привіт, я Влад!</p>
-                  <p class="chef-text">
-                    Мій кодитерський стаж вже 18 років. SHOP BAKERY - це наша
-                    любов, з <br />
-                    якою ми ділимось кожен раз з Вами <br />
-                    через нашу випічку!
-                  </p>
-                  <p class="chef-text">
-                    Я зроблю для вас унікальну начинку <br />
-                    на будь який смак!
-                  </p>
+                  <div class="chef-text">
+                    <p>Привіт, я Влад!</p>
+                    <p>
+                      Мій кодитерський стаж вже 18 років. SHOP BAKERY - це наша
+                      любов, з <br />
+                      якою ми ділимось кожен раз з Вами <br />
+                      через нашу випічку!
+                    </p>
+                    <p>
+                      Я зроблю для вас унікальну начинку <br />
+                      на будь який смак!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -194,9 +200,7 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <button class="order-button" type="button">
-                Замовити дзвінок
-              </button>
+
               <p>
                 Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
               </p>
@@ -211,6 +215,9 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+          <button class="order-button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
     </main>
@@ -219,9 +226,11 @@
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
-            <a class="footer-logo" href="./index.html">
-              <img src="./Photo/logo.svg" alt="Logo" />
-            </a>
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img src="./Photo/logo.svg" alt="Logo" />
+              </a>
+            </div>
             <ul class="footer-menu">
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
@@ -279,5 +288,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-btn-close">&times;</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
