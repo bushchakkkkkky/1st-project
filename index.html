@@ -201,11 +201,59 @@
               <h2 class="contacts-title section-title">
                 Приєднуйся до мережі пекарень
               </h2>
-              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-
-              <p>
-                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+              <p class="contact-text">
+                Заповни форму, щоб ми звʼязались з тобою!
               </p>
+              <form name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name">
+                    Ім'я
+                  </label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ім'я"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="contact-phone">
+                    Телефон
+                  </label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="contact-phone"
+                    id="contact-phone"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="contact-email">
+                    Електронна пошта
+                  </label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="contact-email"
+                    id="contact-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+
+                <button class="form-button order-button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="form-terms-link" href="#" target="_blank">
+                    політикою конфіденційності
+                  </a>
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -217,9 +265,6 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <button class="order-button modal-btn-open" type="button">
-            Замовити дзвінок
-          </button>
         </div>
       </section>
     </main>
@@ -293,7 +338,61 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal-btn-close">&times;</button>
+        <button class="modal-btn-close" type="button">&times;</button>
+        <h2 class="modal-topic">Замовити дзвінок</h2>
+        <p class="modal-text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">
+              Ім'я
+            </label>
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ім'я"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="contact-phone">
+              Телефон
+            </label>
+            <input
+              class="form-input"
+              type="tel"
+              name="contact-phone"
+              id="contact-phone"
+              placeholder="Телефон"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="contact-email">
+              Електронна пошта
+            </label>
+            <input
+              class="form-input"
+              type="email"
+              name="contact-email"
+              id="contact-email"
+              placeholder="Електронна пошта"
+            />
+          </div>
+
+          <button class="form-button order-button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms-link" href="#" target="_blank">
+              політикою конфіденційності
+            </a>
+          </p>
+        </form>
       </div>
     </div>
 
