@@ -26,7 +26,6 @@
   font-weight: 900;
   src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2");
 }
-
 :root {
   --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
@@ -37,7 +36,6 @@
 }
 
 /* Base */
-
 *,
 *::before,
 *::after {
@@ -74,10 +72,6 @@ ul {
   margin: 0;
 }
 
-.section {
-  padding: 48px 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -87,15 +81,7 @@ ul {
   overflow: hidden;
 }
 
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
 /* Button */
-
 .order-button {
   color: var(--color-primary-light);
   background: var(--color-brand-normal);
@@ -113,7 +99,6 @@ ul {
 }
 
 /* Link */
-
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -125,7 +110,6 @@ ul {
 }
 
 /* Header */
-
 .header {
   position: absolute;
   top: 0;
@@ -155,18 +139,9 @@ ul {
 }
 
 /* Hero Section */
-
 .hero-section {
   padding: 272px 0;
-  background:
-    linear-gradient(
-        90deg,
-        rgba(18, 18, 17, 0.78) 0%,
-        rgba(18, 18, 17, 0.6) 58.46%,
-        rgba(18, 18, 17, 0) 90.36%
-      )
-      no-repeat center top/cover,
-    url("../Photo/hero-background.jpg") no-repeat center top/cover;
+  background: linear-gradient(90deg, rgba(18, 18, 17, 0.78) 0%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%) no-repeat center top/cover, url("../Photo/hero-background.jpg") no-repeat center top/cover;
 }
 
 .hero-title {
@@ -182,7 +157,6 @@ ul {
 }
 
 /* Advantages Section */
-
 .advantages-section {
   background-color: var(--color-brand-normal);
   padding: 16px;
@@ -215,7 +189,6 @@ ul {
 }
 
 /* Traditions Section */
-
 .breadman {
   border-radius: 200px 200px 4px 4px;
 }
@@ -258,7 +231,6 @@ ul {
 }
 
 /* Chef Section */
-
 .chef-text p {
   margin-bottom: 24px;
 }
@@ -295,9 +267,7 @@ ul {
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow:
-    -17px 16px 0px 0px var(--color-primary-light),
-    -17px 16px 0px 1px var(--color-secondary-dark);
+  box-shadow: -17px 16px 0px 0px var(--color-primary-light), -17px 16px 0px 1px var(--color-secondary-dark);
 }
 
 .chef-name {
@@ -322,7 +292,6 @@ ul {
 }
 
 /* Formats Section */
-
 .formats-list {
   display: flex;
   gap: 20px;
@@ -338,12 +307,7 @@ ul {
   padding: 24px;
   border: 1px solid lightgray; /*remove*/
   border-radius: 16px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55.21%,
-    rgba(49, 38, 26, 0.71) 72.92%,
-    var(--color-primary-dark) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
   transition: transform 0.3s;
 }
 
@@ -372,7 +336,6 @@ ul {
 }
 
 /* Carousel Button */
-
 .carousel-button {
   display: flex;
   align-items: center;
@@ -398,7 +361,6 @@ ul {
 }
 
 /* Contact Section */
-
 .contacts-section {
   padding-bottom: 96px;
 }
@@ -429,7 +391,6 @@ ul {
 }
 
 /* Footer */
-
 .footer {
   position: relative;
   background-color: var(--color-primary-dark);
@@ -518,7 +479,6 @@ ul {
 }
 
 /* Modal */
-
 .backdrop {
   display: flex;
   position: fixed;
@@ -532,9 +492,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
-  transition:
-    opacity 0.3s,
-    visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -581,7 +539,6 @@ ul {
 }
 
 /* Form */
-
 .form-field {
   position: relative;
   margin-bottom: 32px;
@@ -608,10 +565,20 @@ ul {
   outline: none;
 }
 
+.form-input::-moz-placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
 .form-input::placeholder {
   color: var(--color-secondary-dark);
   font-size: 16px;
   line-height: 1.17;
+}
+
+.form-input:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
 }
 
 .form-input:focus::placeholder {
@@ -637,3 +604,14 @@ ul {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
 }
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}/*# sourceMappingURL=main.css.map */

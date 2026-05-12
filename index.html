@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">My 1st project</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -215,6 +215,9 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Ім'я"
+                    minlength="2"
+                    maxlength="20"
+                    required
                   />
                 </div>
 
@@ -228,6 +231,7 @@
                     name="contact-phone"
                     id="contact-phone"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
 
@@ -241,6 +245,7 @@
                     name="contact-email"
                     id="contact-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
 
@@ -343,7 +348,7 @@
         <p class="modal-text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">
               Ім'я
@@ -354,6 +359,9 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
 
@@ -367,6 +375,8 @@
               name="contact-phone"
               id="contact-phone"
               placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
 
@@ -380,6 +390,7 @@
               name="contact-email"
               id="contact-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 
